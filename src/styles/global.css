@@ -1,6 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 * {
   font-family: Inter, sans-serif;
   scroll-behavior: smooth;
+}
+
+/* tailwind.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

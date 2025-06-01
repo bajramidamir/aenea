@@ -1,0 +1,74 @@
+<div
+  class='bg-gray-100 py-12 px-4 sm:px-8 md:px-12 mb-16 mx-4 sm:mx-8 md:mx-12 rounded-2xl'
+>
+  <h2 class='text-6xl md:text-9xl text-center mb-16'>Contact Us</h2>
+
+  <form
+    name='mini-contact-form'
+    method='POST'
+    data-netlify='true'
+    class='grid grid-cols-1 md:grid-cols-2 gap-12 items-start'
+  >
+    <input type='hidden' name='form-name' value='mini-contact-form' />
+
+    <!-- Left Column -->
+    <div class='flex flex-col gap-8'>
+      <!-- Name -->
+      <div>
+        <label for='name' class='text-sm font-medium mb-2 block'>Name *</label>
+        <input
+          type='text'
+          id='name'
+          name='name'
+          required
+          class='w-full border-b border-black bg-transparent outline-none py-2'
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for='email' class='text-sm font-medium mb-2 block'>Email *</label
+        >
+        <input
+          type='email'
+          id='email'
+          name='email'
+          required
+          class='w-full border-b border-black bg-transparent outline-none py-2'
+        />
+        <p class='text-xs text-gray-600 mt-2'>
+          By providing your information, you agree to receive updates and
+          promotions from us.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class='flex flex-col h-full justify-between gap-8'>
+      <!-- Message -->
+      <div class='flex-grow'>
+        <label for='message' class='text-sm font-medium mb-2 block'
+          >Message*</label
+        >
+        <textarea
+          id='message'
+          name='message'
+          placeholder='I want a design for...'
+          required
+          class='w-full border-b border-black bg-transparent outline-none py-2 resize-none min-h-[140px]'
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class='flex justify-end'>
+        <button
+          type='submit'
+          class='group flex items-center gap-2 bg-black text-white px-6 py-2 rounded-full text-sm hover:bg-gray-900 transition'
+        >
+          Submit
+          <span class='transition-transform group-hover:translate-x-1'>↗</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
